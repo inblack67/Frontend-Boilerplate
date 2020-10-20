@@ -8,7 +8,7 @@ function createIsomorphLink() {
 		const { HttpLink } = require('@apollo/client/link/http');
 
 		const httpLink = new HttpLink({
-			uri: `http://${process.env.NEXT_PUBLIC_SERVER_HOST}/graphql`,
+			uri: `${process.env.NEXT_PUBLIC_SERVER_HOST}/graphql`,
 			credentials: 'include',
 		});
 		return httpLink
